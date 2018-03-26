@@ -17,40 +17,40 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 ## Blue
 
 Vulnerability #1: SQL Injection
-![SQLI](https://raw.githubusercontent.com/acm482/CodePath/master/Week%208/gifs/blue-sqli.gif)
+![SQLI](https://raw.githubusercontent.com/acm482/CodePath-Week-8/master/gifs/blue-sqli.gif)
 Additional Notes:
-1. Exact url for the get sqli can be found ![here](https://raw.githubusercontent.com/acm482/CodePath/master/Week%208/assets/SQLI-Blue.txt)
+1. Exact url for the get sqli can be found ![here](https://raw.githubusercontent.com/acm482/CodePath-Week-8/master/assets/SQLI-Blue.txt)
 
 Vulnerability #2: Session Hijacking/Fixation
-![Session Hijacking/Fixation](https://raw.githubusercontent.com/acm482/CodePath/master/Week%208/gifs/blue-session.gif)
+![Session Hijacking/Fixation](https://raw.githubusercontent.com/acm482/CodePath-Week-8/master/gifs/blue-session.gif)
 Additional Notes:
 1. Rather than use a php script, I used the plugin EditThisCookie. The plugin can be found ![here](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg?hl=en).
 
 ## Green
 
 Vulnerability #1: Username Enumeration
-![Enumeration](https://raw.githubusercontent.com/acm482/CodePath/master/Week%208/gifs/green-userenum.gif)
+![Enumeration](https://raw.githubusercontent.com/acm482/CodePath-Week-8/master/gifs/green-userenum.gif)
 Additional Notes:
 
 Vulnerability #2: Cross-Site Scripting
-![XSS](https://raw.githubusercontent.com/acm482/CodePath/master/Week%208/gifs/green-xss.gif)
+![XSS](https://raw.githubusercontent.com/acm482/CodePath-Week-8/master/gifs/green-xss.gif)
 Additional Notes:
-1. XSS script can be found ![Here](https://raw.githubusercontent.com/acm482/CodePath/master/Week%208/assets/XSS-Green.html)
+1. XSS script can be found ![Here](https://raw.githubusercontent.com/acm482/CodePath-Week-8/master/assets/XSS-Green.html)
 
 
 ## Red
 
 Vulnerability #1: Insecure Direct Object
-![IDOR](https://raw.githubusercontent.com/acm482/CodePath/master/Week%208/gifs/red-idor.gif)
+![IDOR](https://raw.githubusercontent.com/acm482/CodePath-Week-8/master/gifs/red-idor.gif)
 Additional Notes:
 
 Vulnerability #2: Cross-Site Request Forgery
-![CSRF](https://raw.githubusercontent.com/acm482/CodePath/master/Week%208/gifs/red-csrf.gif)
+![CSRF](https://raw.githubusercontent.com/acm482/CodePath-Week-8/master/gifs/red-csrf.gif)
 Additional Notes:
 1. The server blocked the use of iFrames via X-Frame-Options: Identify
 2. The server also does not have a 'Access-Control-Allow-Origin' header, which defaults to blocking unlisted origins.
 3. In order to combat the first two points, I elected to make use of the XSS Vulnerability on the Green site to bypass the origin policy and execute xmlhttp javascript to post the csrf request.
-4. The XSS CSRF script can be found ![Here](https://raw.githubusercontent.com/acm482/CodePath/master/Week%208/assets/CRSF-Red-Javascript.html)
+4. The XSS CSRF script can be found ![Here](https://raw.githubusercontent.com/acm482/CodePath-Week-8/master/assets/CRSF-Red-Javascript.html)
 
 
 ## Notes
